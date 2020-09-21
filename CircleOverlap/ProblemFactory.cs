@@ -3,11 +3,11 @@ using System.Linq;
 
 namespace CircleOverlap
 {
-    public class CircleOverlapProblemFactory
+    public class ProblemFactory
     {
         private readonly INumberProvider _numberProvider;
 
-        public CircleOverlapProblemFactory(INumberProvider numberProvider)
+        public ProblemFactory(INumberProvider numberProvider)
         {
             _numberProvider = numberProvider;
         }

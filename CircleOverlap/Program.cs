@@ -22,10 +22,10 @@ namespace CircleOverlap
                 // INumberProvider numberProvider = new TextReaderNumberProvider(Console.In);
                 // INumberProvider numberProvider = new ConstantNumberProvider(0, 0, 1, 1, 0, 1);
                 
-                var problemFactory = new CircleOverlapProblemFactory(numberProvider);
+                var problemFactory = new ProblemFactory(numberProvider);
                 var problem = problemFactory.Create();
 
-                var solver = new CircleOverlapProblemSolver();
+                var solver = new ProblemSolver();
                 var solution = solver.Solve(problem);
 
                 IReportWriter reportWriter = new ConsoleReportWriter(Console.Out);

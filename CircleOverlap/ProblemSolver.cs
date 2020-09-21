@@ -2,7 +2,7 @@
 
 namespace CircleOverlap
 {
-    internal class CircleOverlapProblemSolver
+    internal class ProblemSolver
     {
         public Report Solve(Problem problem)
         {

@@ -9,7 +9,7 @@ namespace CircleOverlap.Tests
         public void LessThan6NumbersThrowsError()
         {
             var p = new ConstantNumberProvider();
-            var factory = new CircleOverlapProblemFactory(p);
+            var factory = new ProblemFactory(p);
             Assert.Throws<ArgumentException>(() =>
             {
                 var problem = factory.Create();
