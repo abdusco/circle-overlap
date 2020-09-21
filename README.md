@@ -7,7 +7,7 @@ Run the program using:
 dotnet run -p CircleOverlap -- <numbers>
 ```
 
-With these inputs (unit circle at origin + unit circle at (1,1))
+With these inputs (unit circle at origin + unit circle at (1,0))
 ```
 dotnet run -p CircleOverlap -- 0 0 1 0 1 1
 ```
