@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 
 namespace CircleOverlap
@@ -7,7 +8,7 @@ namespace CircleOverlap
     {
         static void Main(string[] args)
         {
-            if (args.Contains("--help") || !args.Any())
+            if (args.Contains("--help"))
             {
                 PrintHelp();
                 return;
@@ -15,12 +16,18 @@ namespace CircleOverlap
             
             try
             {
-                // use console arguments
+                // use program arguments
+                if (!args.Any())
+                {
+                    PrintHelp();
+                    return;
+                }
                 INumberProvider numberProvider = new ArgsNumberProvider(args);
-                // but there are other implementations too
                 
-                // INumberProvider numberProvider = new ConsoleNumberProvider(Console.In);
+                // or other implementations
+                // INumberProvider numberProvider = new TextReaderNumberProvider(Console.In);
                 // INumberProvider numberProvider = new ConstantNumberProvider(0, 0, 1, 1, 0, 1);
+                // INumberProvider numberProvider = new StreamReaderNumberProvider(File.OpenRead("./numbers.txt"));
                 
                 var problemFactory = new ProblemFactory(numberProvider);
                 var problem = problemFactory.Create();
