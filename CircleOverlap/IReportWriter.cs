@@ -2,6 +2,6 @@
 {
     internal interface IReportWriter
     {
-        void Write(CircleOverlapReport report);
+        void Write(Report report);
     }
 }

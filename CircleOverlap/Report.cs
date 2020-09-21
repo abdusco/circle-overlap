@@ -1,6 +1,6 @@
 ﻿namespace CircleOverlap
 {
-    internal class CircleOverlapReport
+    internal class Report
     {
         public bool HasOverlap { get; set; }
         public double Area { get; set; }

@@ -12,7 +12,7 @@ namespace CircleOverlap
             _numberProvider = numberProvider;
         }
 
-        public CircleOverlapProblem Create()
+        public Problem Create()
         {
             var numbers = _numberProvider.GetNumbers().Take(6).ToList();
             if (numbers.Count != 6)
@@ -23,7 +23,7 @@ namespace CircleOverlap
             var c1 = new Circle(new Vector2(numbers[0], numbers[1]), numbers[2]);
             var c2 = new Circle(new Vector2(numbers[3], numbers[4]), numbers[5]);
             
-            return new CircleOverlapProblem(c1, c2);
+            return new Problem(c1, c2);
         }
     }
 }

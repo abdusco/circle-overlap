@@ -2,21 +2,21 @@
 
 namespace CircleOverlap
 {
-    internal class ConsoleSolutionWriter : IReportWriter
+    internal class ConsoleReportWriter : IReportWriter
     {
         private readonly TextWriter _output;
 
-        public ConsoleSolutionWriter(TextWriter output)
+        public ConsoleReportWriter(TextWriter output)
         {
             _output = output;
         }
 
-        public void Write(CircleOverlapReport report)
+        public void Write(Report report)
         {
-            _output.WriteLine($"{nameof(CircleOverlapReport.HasOverlap)}: {report.HasOverlap}");
-            _output.WriteLine($"{nameof(CircleOverlapReport.Area)}: {report.Area}");
-            _output.WriteLine($"{nameof(CircleOverlapReport.InnerDistance)}: {report.InnerDistance}");
-            _output.WriteLine($"{nameof(CircleOverlapReport.OuterDistance)}: {report.OuterDistance}");
+            _output.WriteLine($"{nameof(Report.HasOverlap)}: {report.HasOverlap}");
+            _output.WriteLine($"{nameof(Report.Area)}: {report.Area}");
+            _output.WriteLine($"{nameof(Report.InnerDistance)}: {report.InnerDistance}");
+            _output.WriteLine($"{nameof(Report.OuterDistance)}: {report.OuterDistance}");
         }
     }
 }

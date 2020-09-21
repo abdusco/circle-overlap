@@ -18,14 +18,14 @@ namespace CircleOverlap
             Radius = radius;
         }
 
-        public bool Overlaps(Circle other)
+        public bool IntersectsWith(Circle other)
         {
             if (other == null)
             {
                 throw new ArgumentNullException(nameof(other));
             }
 
-            return Center.DistanceTo(other.Center) < Radius + other.Radius;
+            return InnerDistance(other) < Radius + other.Radius;
         }
 
         public double Area => Math.PI * Math.Pow(Radius, 2.0);
@@ -37,7 +37,7 @@ namespace CircleOverlap
                 throw new ArgumentNullException(nameof(other));
             }
 
-            if (Overlaps(other))
+            if (IntersectsWith(other))
             {
                 return 0;
             }
@@ -57,12 +57,12 @@ namespace CircleOverlap
 
         public double OverlapArea(Circle other)
         {
-            if (!Overlaps(other))
+            if (!IntersectsWith(other))
             {
                 return 0;
             }
 
-            if (Contains(other))
+            if (Contains(other) || other.Contains(this))
             {
                 return Math.Min(Area, other.Area);
             }

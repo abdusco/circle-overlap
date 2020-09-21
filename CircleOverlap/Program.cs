@@ -28,7 +28,7 @@ namespace CircleOverlap
                 var solver = new CircleOverlapProblemSolver();
                 var solution = solver.Solve(problem);
 
-                IReportWriter reportWriter = new ConsoleSolutionWriter(Console.Out);
+                IReportWriter reportWriter = new ConsoleReportWriter(Console.Out);
                 reportWriter.Write(solution);
             }
             catch (Exception e)

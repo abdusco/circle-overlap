@@ -4,7 +4,7 @@ namespace CircleOverlap
 {
     public class ArgsNumberProvider : INumberProvider
     {
-        private string[] _args;
+        private readonly string[] _args;
 
         public ArgsNumberProvider(string[] args)
         {

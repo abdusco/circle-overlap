@@ -22,12 +22,12 @@ namespace CircleOverlap.Tests
         }
 
         [Fact]
-        public void OverlappingCirclesHaveOverlapAreaEqualToSmallerCircle()
+        public void IntersectingCirclesHaveOverlapAreaEqualToSmallerCircle()
         {
             var small = new Circle(new Vector2(0, 0), 1);
             var large = new Circle(new Vector2(0, 0), 2);
 
-            Assert.True(large.Overlaps(small));
+            Assert.True(large.IntersectsWith(small));
             Assert.Equal(small.Area, large.OverlapArea(small));
         }
 
