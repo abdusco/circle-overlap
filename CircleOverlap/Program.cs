@@ -19,7 +19,7 @@ namespace CircleOverlap
                 INumberProvider numberProvider = new ArgsNumberProvider(args);
                 // but there are other implementations too
                 
-                // INumberProvider numberProvider = new TextReaderNumberProvider(Console.In);
+                // INumberProvider numberProvider = new ConsoleNumberProvider(Console.In);
                 // INumberProvider numberProvider = new ConstantNumberProvider(0, 0, 1, 1, 0, 1);
                 
                 var problemFactory = new ProblemFactory(numberProvider);

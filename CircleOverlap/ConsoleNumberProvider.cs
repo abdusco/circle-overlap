@@ -4,11 +4,11 @@ using System.IO;
 
 namespace CircleOverlap
 {
-    class TextReaderNumberProvider : INumberProvider
+    class ConsoleNumberProvider : INumberProvider
     {
-        private TextReader _input;
+        private readonly TextReader _input;
 
-        public TextReaderNumberProvider(TextReader input)
+        public ConsoleNumberProvider(TextReader input)
         {
             _input = input;
         }
