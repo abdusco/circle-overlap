@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleOverlap", "CircleOverlap\CircleOverlap.csproj", "{260823CC-40D5-40B3-9F9D-DC96E481517A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleOverlap.Tests", "CircleOverlap.Tests\CircleOverlap.Tests.csproj", "{C3FE5B7B-F0CC-4302-AD4B-12082EC198B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{260823CC-40D5-40B3-9F9D-DC96E481517A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{260823CC-40D5-40B3-9F9D-DC96E481517A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{260823CC-40D5-40B3-9F9D-DC96E481517A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{260823CC-40D5-40B3-9F9D-DC96E481517A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3FE5B7B-F0CC-4302-AD4B-12082EC198B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3FE5B7B-F0CC-4302-AD4B-12082EC198B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3FE5B7B-F0CC-4302-AD4B-12082EC198B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3FE5B7B-F0CC-4302-AD4B-12082EC198B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
